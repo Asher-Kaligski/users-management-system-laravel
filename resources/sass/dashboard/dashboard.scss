@@ -1,0 +1,13 @@
+// Import Custom Variables
+@import "variables.scss";
+
+// Import Bootstrap
+@import "https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css";
+
+// Import Custom SCSS
+@import "mixins.scss";
+@import "global.scss";
+@import "utilities.scss";
+@import "navbar.scss";
+@import "cards.scss";
+@import "footer.scss";
