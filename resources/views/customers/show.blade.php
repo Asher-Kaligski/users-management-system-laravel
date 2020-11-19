@@ -32,7 +32,7 @@
 
 
         <div class="row justify-content-center form-group pt-2">
-            <a href="{{ URL::to('tickets/customer/' . $customer->id .'/create') }}"
+            <a href="{{ url('tickets/customer/' . $customer->id .'/create') }}"
                 class="btn btn-lg btn-secondary mt-2">Open
                 Ticket</a>
         </div>
@@ -48,7 +48,7 @@
             {{ $ticket->content}}
             <div class="d-flex flex-row justify-content-around mt-2">
                 <span>Status: {{$ticket->status}}</span>
-                <a href="{{ URL::to('tickets/' . $ticket->id . '/edit') }}"><i class="fa fa-2x fa-eye"
+                <a href="{{ url('tickets/' . $ticket->id . '/edit') }}"><i class="fa fa-2x fa-eye"
                         aria-hidden="true"></i>
                 </a>
             </div>

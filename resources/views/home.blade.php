@@ -7,7 +7,7 @@
     <div class="row justify-content-center mt-md-2">
 
         <div class="col-md-5 mb-2">
-            <a href="{{ URL::to('customers/create') }}" class="btn btn-block btn-secondary">Add Customer</a>
+            <a href="{{ url('customers/create') }}" class="btn btn-block btn-secondary">Add Customer</a>
         </div>
         <div class="col-md-5 mb-2 search-box">
             <form id="form">
@@ -46,10 +46,10 @@
                         <td>{{$customer['identity_card']}}</td>
 
                         <td>
-                            <a href="{{ URL::to('customers/' . $customer->id) }}"><i class="fa fa-eye mx-1"
+                            <a href="{{ url('customers/' . $customer->id) }}"><i class="fa fa-eye mx-1"
                                     aria-hidden="true"></i>
                             </a>
-                            <a href="{{ URL::to('customers/' . $customer->id . '/edit') }}"><i class="fa fa-edit mx-1"
+                            <a href="{{ url('customers/' . $customer->id . '/edit') }}"><i class="fa fa-edit mx-1"
                                     aria-hidden="true"></i>
                             </a>
 
@@ -63,7 +63,7 @@
         @endif
 
         <div class="col-md-5 mb-3">
-            <a href="{{ URL::to('customers/') }}" class="btn btn-block btn-secondary mt-2">View All
+            <a href="{{ url('customers/') }}" class="btn btn-block btn-secondary mt-2">View All
                 Customers</a>
         </div>
 
@@ -72,5 +72,5 @@
     @endsection
 
     @push('scripts')
-    <script src="/js/dashboard/home.js"></script>
+    <script src="{{ asset('js/dashboard/home.js') }}"></script>
     @endpush

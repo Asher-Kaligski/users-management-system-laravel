@@ -9,7 +9,7 @@
 
 
         <div class="col-md-4 my-2">
-            <a href="{{ URL::to('customers/create') }}" class="btn btn-block btn-secondary">Add
+            <a href="{{ url('customers/create') }}" class="btn btn-block btn-secondary">Add
                 Customer</a>
         </div>
         @if(count($customers) > 0)
@@ -33,10 +33,10 @@
                         <td>{{$customer['identity_card']}}</td>
 
                         <td>
-                            <a href="{{ URL::to('customers/' . $customer->id) }}"><i class="fa fa-eye mx-1"
+                            <a href="{{ url('customers/' . $customer->id) }}"><i class="fa fa-eye mx-1"
                                     aria-hidden="true"></i>
                             </a>
-                            <a href="{{ URL::to('customers/' . $customer->id . '/edit') }}"><i class="fa fa-edit mx-1"
+                            <a href="{{ url('customers/' . $customer->id . '/edit') }}"><i class="fa fa-edit mx-1"
                                     aria-hidden="true"></i>
                             </a>
 
